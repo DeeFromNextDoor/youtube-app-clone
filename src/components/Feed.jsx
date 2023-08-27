@@ -5,9 +5,12 @@ import { fetchAPI } from "../fetchAPI";
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
+  const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchAPI(`search?part=snippet&q=${selectedCategory}`);
+    fetchAPI(`search?part=snippet&q=${selectedCategory}`).then((data) => {
+      setVideos(data.items);
+    });
   }, [selectedCategory]);
 
   return (
@@ -21,10 +24,11 @@ const Feed = () => {
       </div>
       <div className="videos-box">
         <h2 className="heading">
-          New<span style={{ color: "#F31503" }}>videos</span>
+          {selectedCategory}
+          <span style={{ color: "#F31503" }}>videos</span>
         </h2>
 
-        <Videos videos={[]} />
+        <Videos videos={[videos]} />
       </div>
     </div>
   );
