@@ -3,9 +3,9 @@ import "./ChannelCard.css";
 import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../utils/constants";
 
-const ChannelCard = ({ channelDetail }) => {
+const ChannelCard = ({ channelDetail, marginTop }) => {
   return (
-    <div className="channel-card">
+    <div className="channel-card" style={{ marginTop: marginTop }}>
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <div className="channel-content">
           <img
