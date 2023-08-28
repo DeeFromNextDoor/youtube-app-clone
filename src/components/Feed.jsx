@@ -28,7 +28,7 @@ const Feed = () => {
           <span style={{ color: "#F31503" }}>videos</span>
         </h2>
 
-        <Videos videos={[videos]} />
+        <Videos videos={videos} />
       </div>
     </div>
   );

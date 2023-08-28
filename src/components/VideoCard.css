@@ -1,0 +1,49 @@
+.video-cards {
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.video-cards a {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+.video-cards a img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.media-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #1e1e1e;
+  height: 90px;
+  margin-top: -10px;
+  width: 100%;
+  padding: 15px;
+}
+
+.media-content a {
+  color: #fff;
+}
+
+.media-content h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 750px) {
+  .video-cards {
+    width: 320px;
+  }
+}
