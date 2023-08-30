@@ -1,6 +1,5 @@
 .video-cards {
   position: relative;
-  max-width: 300px;
   border-radius: 0;
   box-shadow: none;
 }
@@ -43,7 +42,7 @@
 }
 
 @media (max-width: 750px) {
-  .video-cards {
-    /* width: 320px; */
+  .video {
+    width: 100%;
   }
 }

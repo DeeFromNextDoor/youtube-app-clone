@@ -20,7 +20,7 @@ const VideoCard = ({ video }) => {
         to={videoId ? `/video/${videoId}` : demoVideoUrl}
         className="video-container"
       >
-        <img src={snippet?.thumbnails?.high?.url} alt={snippet?.title} />
+        <img src={snippet?.thumbnails?.medium?.url} alt={snippet?.title} />
       </Link>
       <div className="media-content">
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>

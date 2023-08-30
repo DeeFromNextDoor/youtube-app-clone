@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./SearchFeed.css";
 import { Videos } from "./";
 import { fetchAPI } from "../fetchAPI";
 import { useParams } from "react-router-dom";
