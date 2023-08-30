@@ -20,11 +20,8 @@ const VideoDetail = () => {
     );
   }, [id]);
 
-  console.log(relatedVideos);
-
   if (!videoDetail?.snippet) return <div>"Loading..."</div>;
   const { snippet } = videoDetail || {};
-  console.log(videoDetail);
 
   return (
     <div className="video-detail">

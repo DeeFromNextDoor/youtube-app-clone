@@ -4,3 +4,13 @@
   gap: 20px;
   position: relative;
 }
+
+@media (max-width: 750px) {
+  .videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}

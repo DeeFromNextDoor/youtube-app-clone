@@ -10,11 +10,18 @@
   padding: 0 1rem;
 }
 
+.sidebar-box p {
+  margin: 1rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .feed .videos-box {
   flex: 2;
   font-weight: bold;
   margin-bottom: 1 rem;
-  height: 90vh;
+  height: 95vh;
+  overflow-y: auto;
   color: white;
   padding: 0.5rem;
 }
@@ -26,6 +33,9 @@
 @media (max-width: 750px) {
   .feed {
     flex-direction: column;
+  }
+  .feed .sidebar-box {
+    height: auto;
   }
   .feed .box {
     height: auto;

@@ -8,17 +8,12 @@
 }
 
 .navbar a {
-  flex: 1;
   display: flex;
   align-items: center;
 }
 
 .navbar a img {
   height: 45px;
-}
-
-.search-bar {
-  flex: 1;
 }
 
 .search-form {

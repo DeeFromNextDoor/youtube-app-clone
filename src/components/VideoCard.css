@@ -1,11 +1,11 @@
 .video-cards {
   position: relative;
-  width: 100%;
+  max-width: 300px;
   border-radius: 0;
   box-shadow: none;
 }
 
-.video-cards a {
+.video-cards .video-container {
   margin: 0 !important;
   padding: 0 !important;
   display: block;
@@ -44,6 +44,6 @@
 
 @media (max-width: 750px) {
   .video-cards {
-    width: 320px;
+    /* width: 320px; */
   }
 }
