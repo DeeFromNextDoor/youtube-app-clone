@@ -1,10 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Videos.css";
 import { VideoCard, ChannelCard } from "./";
 
-const Videos = ({ videos }) => {
+const Videos = ({ videos, overflowY, height, maxWidth, border }) => {
+  if (videos === null) {
+    return <div>Loading...</div>;
+  }
   return (
-    <div className="videos">
+    <div
+      className="videos"
+      style={{
+        height: height,
+        overflowY: overflowY,
+        maxWidth: maxWidth,
+      }}
+    >
       {videos.map((item, idx) => {
         return (
           <div className="video" key={idx}>

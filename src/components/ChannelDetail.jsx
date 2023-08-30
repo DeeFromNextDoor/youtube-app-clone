@@ -23,7 +23,12 @@ const ChannelDetail = () => {
   return (
     <div className="channel-detail">
       <div className="gradient-box" />
-      <ChannelCard channelDetail={channelDetail} marginTop="-110px" />
+      <ChannelCard
+        channelDetail={channelDetail}
+        marginTop="-110px"
+        margin="auto"
+        width="fit-content"
+      />
       <div className="channel-videos">
         <Videos videos={videos} />
       </div>

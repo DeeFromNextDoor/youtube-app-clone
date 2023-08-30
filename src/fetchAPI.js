@@ -20,3 +20,15 @@ export const fetchAPI = async (url) => {
   const { data } = await axios.get(`${BASE_URL}/${url}`, options);
   return data;
 };
+
+// import axios from "axios";
+
+// const BASE_URL = "https://www.googleapis.com/youtube/v3"; // Updated base URL
+
+// export const fetchAPI = async (url) => {
+//   // Build the complete URL by adding the API key as a query parameter
+//   const completeURL = `${BASE_URL}/${url}&key=AIzaSyDv0sJcLLFWqXaMrPPkAz7VFWyXi-Uvbv4&maxResults=50`;
+
+//   const { data } = await axios.get(completeURL);
+//   return data;
+// };

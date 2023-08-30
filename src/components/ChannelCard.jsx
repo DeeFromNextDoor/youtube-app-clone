@@ -3,9 +3,12 @@ import "./ChannelCard.css";
 import { Link } from "react-router-dom";
 import { demoProfilePicture } from "../utils/constants";
 
-const ChannelCard = ({ channelDetail, marginTop }) => {
+const ChannelCard = ({ channelDetail, marginTop, width, margin }) => {
   return (
-    <div className="channel-card" style={{ marginTop: marginTop }}>
+    <div
+      className="channel-card"
+      style={{ marginTop: marginTop, width: width, margin: margin }}
+    >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <div className="channel-content">
           <img
