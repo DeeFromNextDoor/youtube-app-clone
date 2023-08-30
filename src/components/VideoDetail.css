@@ -11,11 +11,11 @@
 .video-detail .detail .box {
   flex: 1;
   width: auto;
+  position: sticky;
 }
 
 .box .box-detail {
   width: 100%;
-  position: sticky;
 }
 
 .box-detail h4 {
