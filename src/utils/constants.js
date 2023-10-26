@@ -2,7 +2,6 @@ export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
 
 export const categories = [
   { name: "New", icon: "bi bi-house" },
-  { name: "JS Mastery", icon: "bi bi-code-slash" },
   { name: "Coding", icon: "bi bi-code-slash" },
   { name: "ReactJS", icon: "bi bi-code-slash" },
   { name: "NextJS", icon: "bi bi-code-slash" },
